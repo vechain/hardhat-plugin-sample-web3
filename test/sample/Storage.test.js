@@ -29,7 +29,8 @@
         try
         {
           await this.Storage.store(1000);
-        } catch (err)
+        }
+        catch (err)
         {
           const msg = err.reason;
           expect(msg).to.eql("Number must be < 100");

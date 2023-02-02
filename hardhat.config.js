@@ -1,6 +1,6 @@
 
 require("@nomicfoundation/hardhat-toolbox");
-require("@vechain/hardhat-thor");
+require("@makischristou/hardhat-plugin-web3");
 require('@nomiclabs/hardhat-truffle5');
 
 module.exports = {
