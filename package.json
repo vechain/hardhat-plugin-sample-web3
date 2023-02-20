@@ -11,10 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.1",
-    "@makischristou/hardhat-plugin-web3": "^0.0.2",
+    "@vechainfoundation/hardhat-web3": "^0.0.1",
     "hardhat": "^2.12.6"
   },
   "dependencies": {
-    "@nomiclabs/hardhat-truffle5": "^2.0.7"
+    "@nomiclabs/hardhat-truffle5": "^2.0.7",
+    "@vechainfoundation/hardhat-vechain": "^0.0.1"
   }
 }

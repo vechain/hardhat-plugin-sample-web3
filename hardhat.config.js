@@ -1,7 +1,10 @@
 
 require("@nomicfoundation/hardhat-toolbox");
-require("@makischristou/hardhat-plugin-web3");
+
 require('@nomiclabs/hardhat-truffle5');
+
+require("@vechainfoundation/hardhat-vechain");
+require("@vechainfoundation/hardhat-web3");
 
 module.exports = {
   solidity: {

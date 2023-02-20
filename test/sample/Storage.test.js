@@ -26,15 +26,19 @@
 
       it('revert if num > 100', async function () {
 
+        flag = 0;
+
         try
         {
-          await this.Storage.store(1000);
+          await this.Storage.store(101);
         }
         catch (err)
         {
-          const msg = err.reason;
-          expect(msg).to.eql("Number must be < 100");
+          flag = 1;
         }
+
+        expect(flag).to.equal(1);
+
       });
   });
   
