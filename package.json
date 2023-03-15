@@ -1,21 +1,12 @@
 {
-  "name": "my-from-scratch-project",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
-    "@vechainfoundation/hardhat-web3": "^0.0.1",
-    "hardhat": "^2.12.6"
-  },
   "dependencies": {
     "@nomiclabs/hardhat-truffle5": "^2.0.7",
-    "@vechainfoundation/hardhat-vechain": "^0.0.1"
+    "@vechainfoundation/hardhat-ethers": "^0.0.1",
+    "@vechainfoundation/hardhat-vechain": "^0.0.1",
+    "@vechainfoundation/hardhat-web3": "^0.0.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "hardhat": "^2.13.0"
   }
 }
