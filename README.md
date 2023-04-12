@@ -1,15 +1,13 @@
-# Sample Hardhat Project using thor
+# Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract and a test for that contract.
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
-First, install the node modules:
+Try running some of the following tasks:
 
-```bash
-npm install
-```
-
-Before running the tests, you need to spin up a local thor instance. Assuming that thor is running on localhost run the sample test on the `Storage.sol` contract.
-
-```bash
-npx hardhat test --network vechain
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat run scripts/deploy.ts
 ```
