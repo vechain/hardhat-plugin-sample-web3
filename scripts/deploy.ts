@@ -1,18 +1,13 @@
-import { ethers } from "hardhat";
+const CONTRACT_NAME = "Storage"; // Declare a global variable for the contract name
+const Storage = artifacts.require(CONTRACT_NAME);
+const { expect } = require('chai');
+
 
 async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const unlockTime = currentTimestampInSeconds + 60;
-
-  const lockedAmount = ethers.utils.parseEther("0.001");
-
-  const Lock = await ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
-
-  await lock.deployed();
+  const storage = await Storage.new();
 
   console.log(
-    `Lock with ${ethers.utils.formatEther(lockedAmount)}ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`
+    `${CONTRACT_NAME} deployed to ${storage.address}` // Use the global variable
   );
 }
 
