@@ -26,8 +26,6 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-          always-auth: true
-          scope: '@vechainfoundation'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
