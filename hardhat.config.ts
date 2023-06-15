@@ -18,7 +18,7 @@ module.exports = {
   },
   networks: {
     testnet: {
-      url: "https://testnet.veblocks.net/",
+      url: "http://127.0.0.1:8669",
       accounts: {
         mnemonic: "denial kitchen pet squirrel other broom bar gas better priority spoil cross",
         count: 10,
