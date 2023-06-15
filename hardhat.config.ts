@@ -5,6 +5,8 @@ import '@nomiclabs/hardhat-truffle5';
 import '@vechain/hardhat-vechain';
 import '@vechain/hardhat-web3';
 
+require('solidity-coverage');
+
 const config: HardhatUserConfig = {
   solidity: "0.8.18",  
 };
@@ -15,8 +17,8 @@ module.exports = {
       version: "0.8.18",
   },
   networks: {
-    vechain: {
-      url: "http://127.0.0.1:8669",
+    testnet: {
+      url: "https://testnet.veblocks.net/",
       accounts: {
         mnemonic: "denial kitchen pet squirrel other broom bar gas better priority spoil cross",
         count: 10,
