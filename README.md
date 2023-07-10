@@ -50,6 +50,12 @@ module.exports = {
     }
 };
 ```
+
+Thor solo node can be started via docker-compose
+```shell
+docker-compose up -d  
+```
+
 Multi network configuration can be tested with:
 
 ```shell
